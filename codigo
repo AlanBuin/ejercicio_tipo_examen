@@ -19,8 +19,8 @@ struct empleado
 
 empleado nomina[100],aux;
 int opc,contar,r,i,j;
-int 
-char 
+int xid, xr;
+char encontrado;
 float 
 char 
 
@@ -117,19 +117,97 @@ int main()
 						nomina[contar].ivar=0;
 					}
 					
-					
-			break;
+					nomina[contar].salnet=nomina[contar].sbruto-nomina[contar].isr-nomina[contar].imss+nomina[contar].ivap-nomina[contar].ivar;
+			break;//termina case 1
 			
 			case 2:
+				void ordenar
+				{
+					for(i=0;i<=contar;i++)
+					{
+						for(j=1;j<contar;j++)
+						{
+							if(nomina[j].id>nomina[j+1].id)
+							{
+								aux=nomina[j];
+								nomina[j]=nomina[j+1];
+								nomina[j+1]=aux
+							}
+						}
+					}
+				}
 				
 			
-			break;
+			break;// termina case2
 			
 			case 3:
-			   
+				void listagral()
+				{
+					printf("%d ",nomina[r].id;
+					printf("%s ",nomina[r].nombre;
+					printf("%s ",nomina[r].puesto;
+					swicht(nomina[r].depto)
+					{
+						case 1:
+							printf("rh");
+						break;
+						case 2:
+							printf("finanzas");
+						break;
+						case 3:
+							printf("sistemas");
+						break;
+						case 4:
+							printf("ventas");
+						break;
+						case 5:
+							printf("mantenimineto");
+						break;
+					}//termina switch
+				}//termina departamento
+				
+				if(nomina[r].hrario=='m')
+				   printf("matutino");
+				else
+				   printf("vespertino");
+				   
+				switch(nomina[r].sucurs)
+				{
+					case 1:
+						printf("santa fe");
+					break;
+					case 2:
+							printf("perisur");
+					break;
+					case 3:
+							printf("monterrey");
+					break;
+					case 4:
+							printf("jalisco");
+					break;
+					case 5:
+						printf("ciudad de mexico");
+					break;
+				}//termina sucursal
+				
+				if(nomina[r].tipsal=='h')
+				   printf("honorarios");
+				else
+				   printf("nomina");
+				   
+				   
+				   printf("%.2f ",nomina[r].sbruto);
+				   printf("%.2f ",nomina[r].isr);
+				   printf("%.2f ",nomina[r].imss);
+				   printf("%.2f ",nomina[r].ivap);
+				   printf("%.2f ",nomina[r].ivar);
+				   printf("%.2f ",nomina[r].salnet);  
+				
 			break;//termina case 3	
 			
 			case 4:
+				int main()
+				
 				
 				break;
 				
@@ -141,7 +219,7 @@ int main()
 				system("cls");
 				encontrado'n';
 				fflush("stdin");
-				printf("id del producto a buscar");
+				printf("id del empleado que desea buscar");
 				scanf("%d",&xid);
 				for(xr=1;xr<=contar;xr++)
 				{
